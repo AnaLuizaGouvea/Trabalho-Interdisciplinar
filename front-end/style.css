@@ -1,0 +1,222 @@
+:root{
+    --verdeClaro: #CBD4C2;
+    --verdeEscuro:#839B6F;
+}
+
+/*
+. = classe
+# = id
+*/
+
+html,body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 20px;
+    font-family: sans-serif;
+    background: #FFFCFF;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    height: 100%;
+    max-width: 100%;
+}
+
+/*                      Header                   */
+
+
+/* Inicio NavBar VerdeClaro */
+header{
+    max-width: 100%;
+}
+a{
+   margin: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 13vh; /* altura do trem verdeClaro (topo) 13*/
+    background: var(--verdeClaro);
+    box-shadow: 0px 0px 6px #222222;
+    max-width: 100%;
+}
+.logo {
+    margin: 0;
+    width: 115px;
+    height: 115px;
+}
+.busca-navbar{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    max-width: 100%;
+}
+#butaodelupa{
+    position: relative;
+    margin: 0;
+    color: white;
+    display: inline-block;
+    font-size: 22px; /* Tamanho da lupa */
+    background-color:transparent;
+    border: none;
+    border-radius: 10em;
+    text-align:center;
+    left: 5px;
+    height: 40px;   /* Altura do circulo da lupa envolta */
+    width: 40px;   /* Cumprimento do circulo da lupa envolta */
+}
+#butaodelupa:hover{
+    color:rgb(105, 105, 105);
+    font-size: 20px;
+    background-color: white;
+}
+#divBusca{ /*barra de pesquisa*/
+    height: 40px;
+    width: 500px;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    align-items: center;  
+    max-width: 100%;
+}
+#divBusca:hover { /*bordar quando passa o mouse na barra de pesquisa*/
+    box-shadow: 0px 0px 6px #222222;
+}
+#txtBusca{ /*barra de pesquisa*/
+    margin-left:15px;
+    font-size: 17px;
+    width: 90%;
+    height: 28px;
+    border: none;
+    position: relative;
+    top:6px;
+}
+#abrir-login{
+    cursor: pointer;
+    border: none;
+    background: var(--verdeEscuro);
+    color: black;
+    border-radius: 690px;
+    padding: 8px 18px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight:bold;
+}
+#login :hover{
+    color: #FFFCFF;
+}
+
+
+/* Fim NavBar VerdeClaro */
+
+
+/* Inicio NavBar Verde Escuro*/
+.menu{
+    width: 100vw;
+    min-height: 5vh;
+    background: var(--verdeEscuro);
+    box-shadow: 0px 0px 4px #464545;
+    max-width: 100%;
+}
+.itens-menu{
+    margin: auto;
+    list-style: none;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 50vw; /*distancia entre elementos */
+    height: 60px;
+    min-width: 700px;
+    z-index:1;
+}
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.menu a:hover{
+    background: transparent;
+    color: #FFFCFF;
+    transition: 0.3s;
+}
+.menu ul li a{ /* palavras dos link da navbar verdeEscuro*/
+    margin: 0 auto;
+    color:black; /* Cor texto barra nav*/
+    text-decoration: none;
+    background: transparent;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+/* Fim NavBar Verde Escuro*/
+
+/* Carrossel menu*/
+.carousel-inner img{
+    height: 540px;
+}
+/*Fim Carrossel menu*/
+
+
+
+
+/*INICIO FOOTER*/
+footer{
+    background-color: var(--verdeEscuro);
+    display: flex; 
+    justify-content: space-around;  /*coluna*/
+    align-items: center; /*linha*/
+    box-shadow: 0px 0px 6px #222222;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: black;
+}
+footer h3{
+    font-size: 1.25em;
+    text-align: center; 
+    font-family: 'ABeeZee', sans-serif;
+    font-weight:bold;
+
+}
+footer ul{
+    list-style-type: none; 
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    align-items: center;
+}
+footer li{
+    display: flex;
+    margin: 15px;
+    justify-content: start;
+}
+.menufooter p{
+    font-family: 'ABeeZee', sans-serif;
+}
+.contatofooter p{
+    padding: 4px;
+    font-family: 'ABeeZee', sans-serif;
+}
+.contatofooter i{
+    font-size: 25px;
+}
+.contatofooter h3{
+    margin-top: 15px;
+}
+/*FIM FOOTER*/
