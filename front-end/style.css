@@ -55,9 +55,9 @@ a {
 }
 
 .logo {
-    margin: 10%;
-    width: 20%;
-    height: 20%;
+    margin: 0;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
 }
 .busca-navbar {
@@ -194,6 +194,7 @@ a {
 /* Carrossel menu*/
 #carousel-inner-first img {
     height: 540px;
+    width: 50%;
 }
 
 /*Fim Carrossel menu*/
