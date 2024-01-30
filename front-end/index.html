@@ -33,7 +33,7 @@
         <div id="navbar">
             <a href="index.html">
                 <!-- recarregar página quando clica na logo-->
-                <img class="logo" src="images/logo8.png" alt="Logo" />
+                <img class="logo" src="http://localhost:3000/logo8.png" alt="Logo" />
             </a>
             <!--barra de busca-->
             <div class="busca-navbar">
@@ -53,12 +53,12 @@
 
         <div id="popup-login">
             <button id="fechar-login">X</button>
-            <img id="logo-popup" src="images/logo8.png" alt="Logo" />
+            <img id="logo-popup" src="http://localhost:3000/logo8.png" alt="Logo" />
             <!-- Formulário de Login -->
             <form>
-                <input type="email" placeholder="Email ou Nome de Usuário" required>
-                <input type="password" placeholder="Senha" required>
-                <button id="realizar-login">Entrar</button>
+                <input type="email" id="email-login" placeholder="Email ou Nome de Usuário" required>
+                <input type="password" id="senha-login" placeholder="Senha" required>
+                <button type="button" id="realizar-login">Entrar</button>
             </form>
 
             <div id="nao-cadastrado">
@@ -89,10 +89,10 @@
         </div>
         <div class="carousel-inner" id="carousel-inner-first">
             <div class="carousel-item active">
-                <img src="images/heading1.png" class="d-block w-100" alt="...">
+                <img src="http://localhost:3000/heading1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/heading2.png" class="d-block w-100" alt="...">
+                <img src="http://localhost:3000/heading2.png" class="d-block w-100" alt="...">
             </div>
             <!-- <div class="carousel-item">
                 <img src="images/3.jpg" class="d-block w-100" alt="...">
@@ -117,19 +117,19 @@
         </h2>
         <div class="card-lojas">
             <div class="card-redondo">
-                <img src="images/loja1.png">
+                <img src="http://localhost:3000/loja1.png">
             </div>
             <div class="card-redondo">
-                <img src="images/loja2.png">
+                <img src="http://localhost:3000/loja2.png">
             </div>
             <div class="card-redondo">
-                <img src="images/loja3.png">
+                <img src="http://localhost:3000/loja3.png">
             </div>
             <div class="card-redondo">
-                <img src="images/loja4.png">
+                <img src="http://localhost:3000/loja4.png">
             </div>
             <div class="card-redondo">
-                <img src="images/loja5.png">
+                <img src="http://localhost:3000/loja5.png">
             </div>
         </div>
     </section>
@@ -148,7 +148,7 @@
                         <div class="card">
                             <div class="image-wrapper">
                                 <a href="tela_roupas.html">
-                                    <img src="images/top-laranja.jpg" alt="Top Laranja">
+                                    <img src='http://localhost:3000/top-laranja.jpg' alt="Top Laranja">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -160,60 +160,23 @@
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/short.jpg" alt="...">
+                                <img src="http://localhost:3000/short.jpg" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Short Preto</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
+                                <p class="card-text">O short foi usado poucas vezes, bem conservado, 
+                                    a cor não está desbotada e não possui marcas de uso. Sem estampas e possui elastano </p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/blusa-verde.jpg" alt="...">
+                                <img src="http://localhost:3000/blusa-verde.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
-                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div class="card">
-                            <div class="image-wrapper">
-                                <img src="images/jaqueta.jpg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
-                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="image-wrapper">
-                                <img src="images/blusa-frio.jpg" alt="..." width="100%s">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
-                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="image-wrapper">
-                                <img src="images/calca-branca.jpg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
+                                <h5 class="card-title">Camisa verde</h5>
+                                <p class="card-text">A camisa tem o tecido leve, de viscose, 
+                                    está com a cor um pouco mais clara por causa das lavagens. Veste até M e é considerado unissex.</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
@@ -223,34 +186,66 @@
                     <div class="cards-wrapper">
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/cropped-branco.jpg" alt="...">
+                                <img src="http://localhost:3000/jaqueta.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
+                                <h5 class="card-title">Jaqueta</h5>
+                                <p class="card-text">A jaqueta é de couro falso, ótima para dias frios.
+                                    Já foi muito usada mas está em ótimo estado, o couro não está descascando.</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/sueter.jpg" alt="...">
+                                <img src="http://localhost:3000/blusa-frio.jpg" alt="..." width="100%s">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
+                                <h5 class="card-title">Blusa de frio </h5>
+                                <p class="card-text">A blusa é mais curta, dependendo do tamanho da pessoa pode ficar como cropped manga longa. Nunca usada.</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/calça-preta.jpg" alt="...">
+                                <img src="http://localhost:3000/calca-branca.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Roupa</h5>
-                                <p class="card-text">Descrição da roupa como tamanho, cor, se ela se encontra conservada
-                                    entre outras informações inportantes</p>
+                                <h5 class="card-title">Calça Branca</h5>
+                                <p class="card-text">A calça foi usada poucas vezes, não possui mancha nenhuma no tecido. É um jeans bem molinho e possui elastano.</p>
+                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="image-wrapper">
+                                <img src="http://localhost:3000/cropped-branco.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped Branco</h5>
+                                <p class="card-text">O cropped já foi usado bastante vezes, mas o tecido está intacto, sem nenhuma marca de uso. Não estica e possui bojo.</p>
+                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-wrapper">
+                                <img src="http://localhost:3000/sueter.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Suéter</h5>
+                                <p class="card-text">O suéter é de linho, tecido ótimo. Sempre foi bem cuidado, as lavagens não deixaram o tecido relaxado. Ótimo estado de conservação.</p>
+                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-wrapper">
+                                <img src="http://localhost:3000/calça-preta.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Calça Preta </h5>
+                                <p class="card-text">A calça está em ótimo estado, usada pouquíssimas vezes. Não possui elastano e o tecido agarra muito pelinho. Possui elastano e veste muito bem.</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
@@ -281,30 +276,64 @@
                     <div class="cards-wrapper">
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/1.jpg" alt="...">
+                                <img src="http://localhost:3000/entrega-cestas.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
-                                <p class="card-text">Descrição da ação</p>
+                                <h5 class="card-title">Entrega de Cestas Básicas</h5>
+                                <p class="card-text">Essa ação tem como objetivo realizar a doação de cestas para famílias carentes. </p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/2.jpg" alt="...">
+                                <img src="http://localhost:3000/plantacao.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
-                                <p class="card-text">Descrição da ação</p>
+                                <h5 class="card-title">Plantação Comunitária </h5>
+                                <p class="card-text">Essa ação tem o objetivo de motivar as pessoas à plantarem árvores. </p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/3.jpg" alt="...">
+                                <img src="http://localhost:3000/escola.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
+                                <h5 class="card-title">Visita em Escolas Públicas </h5>
+                                <p class="card-text">Essa ação tem como objetivo visitar crianças de escolas públicas. </p>
+                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="image-wrapper">
+                                <img src="http://localhost:3000/inverno-solidario.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Inverno Solidário </h5>
+                                <p class="card-text">Essa ação tem o objetivo de motivar as pessoas a doarem cobertores para moradores de rua.</p>
+                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-wrapper">
+                                <img src="http://localhost:3000/oleo.jpeg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Descarte Correto de Óleo </h5>
+                                <p class="card-text">Essa ação tem como objetivo incentivar o descarte correto de óleo. </p>
+                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-wrapper">
+                                <img src="http://localhost:3000/natal.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Natal Solidário </h5>
                                 <p class="card-text">Descrição da ação</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
@@ -315,65 +344,31 @@
                     <div class="cards-wrapper">
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/2.jpg" alt="...">
+                                <img src="http://localhost:3000/crianca.png" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
+                                <h5 class="card-title">Ajude Uma Criança </h5>
                                 <p class="card-text">Descrição da ação</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/3.jpg" alt="...">
+                                <img src="http://localhost:3000/animal.jpeg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
+                                <h5 class="card-title">Alimente um Animal </h5>
                                 <p class="card-text">Descrição da ação</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="image-wrapper">
-                                <img src="images/1.jpg" alt="...">
+                                <img src="http://localhost:3000/bazar.jpg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
-                                <p class="card-text">Descrição da ação</p>
-                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div class="card">
-                            <div class="image-wrapper">
-                                <img src="images/3.jpg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
-                                <p class="card-text">Descrição da ação</p>
-                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="image-wrapper">
-                                <img src="images/2.jpg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
-                                <p class="card-text">Descrição da ação</p>
-                                <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="image-wrapper">
-                                <img src="images/1.jpg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Ação</h5>
-                                <p class="card-text">Descrição da ação</p>
+                                <h5 class="card-title">Bazar - Ajude um Animal </h5>
+                                <p class="card-text">Essa ação além de incentivar o consumo em bazar, tem como objetivo ajudar animais de rua.</p>
                                 <a href="#" class="btn btn-primary" id="btn-card">Ver mais</a>
                             </div>
                         </div>
@@ -457,6 +452,56 @@
             document.getElementById('popup-login').style.display = 'none';
         });
     </script>
+
+<script>
+    document.getElementById('realizar-login').addEventListener('click', async function () {
+        const email = document.getElementById('email-login').value;
+        const senha = document.getElementById('senha-login').value;
+
+        try {
+            const response = await fetch('http://localhost:3000/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, senha }),
+            });
+
+            
+            
+            if (response.ok) {
+                console.log('Login bem-sucedido!');
+
+                // Esconder o botão de login
+                document.getElementById('login').style.display = 'none';
+                
+                // Esconder o pop up
+                document.getElementById('popup-login').style.display = 'none';
+                
+                // Criar um elemento de imagem e adicionar ao local do botão de login
+                const imagem = document.createElement('img');
+                imagem.src = 'http://localhost:3000/pos-login1.jpg'; 
+                imagem.alt = 'Imagem pós-login';
+
+                // Estilo da imagem substituta
+                imagem.style.width = '50px';  
+                imagem.style.height = '50px'; 
+                imagem.style.borderRadius='50%';
+
+                // Adicionar o elemento img no lugar do botão de login
+                const divLogin = document.getElementById('login');
+                divLogin.parentNode.insertBefore(imagem, divLogin.nextSibling);
+
+            } else {
+                console.error('Erro ao realizar login:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Erro ao realizar login:', error.message);
+        }
+    });
+</script>
+
+
 </body>
 
 
