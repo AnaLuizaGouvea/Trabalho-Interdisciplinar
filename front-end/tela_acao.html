@@ -20,6 +20,15 @@
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <style>
+    .carousel-item img {
+    width: 100vw; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+    }
+
+    </style>
 
     <title>Brecho</title>
 </head>
@@ -30,7 +39,7 @@
         <!--topo verde claro-->
         <div id="navbar">
             <a href="index.html">
-                <!-- recarregar página quando clica na logo-->
+                <!-- ir para a página inicial-->
                 <img class="logo" src="images/logo8.png" alt="Logo" />
             </a>
             <!--barra de busca-->
@@ -71,13 +80,13 @@
         </div>
         <div class="carousel-inner" id="carousel-inner-first">
             <div class="carousel-item active">
-                <img src="images/empresa1.jpeg" class="d-block w-100" alt="empresa1">
+                <img src="images/acao1.jpg" class="d-block w-100" alt="empresa1">
             </div>
             <div class="carousel-item">
-                <img src="images/empresa2.jpeg" class="d-block w-100" alt="empresa2">
+                <img src="images/acao2.jpg" class="d-block w-100" alt="empresa2">
             </div>
             <div class="carousel-item">
-                <img src="images/empresa3.jpeg" class="d-block w-100" alt="empresa3">
+                <img src="images/acao3.jpg" class="d-block w-100" alt="empresa3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -97,23 +106,28 @@
             <div class="col-md-6">
                 <h2>Sobre a empresa</h2>
 
-                <p id="empresaDescricao1">A Empresa 1 é uma empresa líder no setor de tecnologia, 
-                    conhecida por suas inovações revolucionárias. Fundada em 2005, a Empresa 1 tem se destacado no mercado devido à sua abordagem inovadora e foco na qualidade do produto. 
-                    Com uma equipe talentosa e uma visão de longo prazo, a Empresa 1 está posicionada para continuar seu crescimento nos próximos anos.</p>
+                <p id="empresaDescricao1">A Inovatech é uma empresa líder no setor de tecnologia, 
+                    conhecida por suas inovações revolucionárias. Fundada em 2005, a Inovatech tem se destacado no mercado devido à sua abordagem inovadora e foco na qualidade do produto. 
+                    Com uma equipe talentosa e uma visão de longo prazo, a Inovatech está posicionada para continuar seu crescimento nos próximos anos.</p>
                 
-                <p id="empresaDescricao2" style="display: none;">Descrição da Empresa 2 aqui...</p>
+                <p id="empresaDescricao2" style="display: none;">A EcoPapel é uma empresa comprometida com a produção responsável de papel. 
+                    Fundada com a missão de oferecer soluções sustentáveis para a indústria de papel, 
+                    a nossa empresa busca constantemente inovações que reduzam o impacto ambiental da produção de papel.</p>
                 
-                <p id="empresaDescricao3" style="display: none;">Descrição da Empresa 3 aqui...</p>
+                <p id="empresaDescricao3" style="display: none;">A PureHair é uma empresa dedicada à produção de shampoos e produtos capilares naturais, formulados com ingredientes cuidadosamente selecionados para proporcionar cuidado e saúde aos cabelos. Nossa empresa acredita que a natureza 
+                    oferece os melhores recursos para cuidar dos cabelos de forma gentil e eficaz, sem comprometer a saúde ou o meio ambiente.</p>
             </div>
             <div class="col-md-6">
                 <h2>Descrição da ação</h2>
-                <p id="acaoDescricao1">A ação da Empresa 1 tem sido uma das mais procuradas no mercado devido ao seu desempenho consistente e perspectivas positivas. 
-                    Com um histórico de crescimento sólido e uma estratégia de negócios bem definida, 
-                    a ação da Empresa 1 é vista como uma escolha sólida para investidores de longo prazo.</p>
+                <p id="acaoDescricao1">A Inovatech Solutions está promovendo uma campanha solidária de doação de roupas de frio para ajudar aqueles que mais precisam enfrentar o inverno. 
+                    Com o objetivo de espalhar calor humano e conforto, estamos incentivando nossos colaboradores a, além de realizar as doações, distribuir essas roupas. 
+                    Junte-se a nós nesta iniciativa e faça parte deste gesto de solidariedade e compaixão. </p>
                 
-                <p id="acaoDescricao2" style="display: none;">Descrição da ação da Empresa 2 aqui...</p>
+                <p id="acaoDescricao2" style="display: none;">A EcoPapel está lançando a campanha "Raízes Sustentáveis" com o objetivo de promover o plantio de árvores e contribuir para a preservação do meio ambiente. Como parte de nosso compromisso com a sustentabilidade, 
+                    estamos incentivando nossos colaboradores, parceiros e comunidade a se unirem a nós nessa iniciativa.</p>
                 
-                <p id="acaoDescricao3" style="display: none;">Descrição da ação da Empresa 3 aqui...</p>
+                <p id="acaoDescricao3" style="display: none;">A PureHair está promovendo a campanha "Nutrindo Corações" com o objetivo de arrecadar alimentos para instituições de caridade que atendem pessoas em situação de vulnerabilidade. 
+                    Acreditamos que a beleza vai além dos cuidados externos e inclui também ações que nutrem o coração e alimentam a esperança.</p>
             </div>
         </div>
     </div>
