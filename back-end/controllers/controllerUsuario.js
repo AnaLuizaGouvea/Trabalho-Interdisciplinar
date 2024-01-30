@@ -2,7 +2,7 @@ const { usuario } = require('../models');
 var bcrypt = require('bcryptjs');
 
 const UsuarioController = {
-  async index(req, res) {
+  async index(req, res) { //faz cadastro
     try {
       const usuarios = await usuario.findAll();
       return res.status(200).json(usuarios);
@@ -13,8 +13,9 @@ const UsuarioController = {
   },
 
   async store(req, res) {
+    // PARTE QUE ESTAVA ANTES DE EU ALTERAR
     var salt = bcrypt.genSaltSync(10);
-    req.body.senha = bcrypt.hashSync("req.body.senha", salt);
+    req.body.senha = bcrypt.hashSync(req.body.senha, salt);
     try {
       const novoUsuario = await usuario.create(req.body);
       return res.status(201).json(novoUsuario);
@@ -72,6 +73,31 @@ const UsuarioController = {
       return res.status(500).json({ error: 'Erro interno do servidor' });
     }
   },
+
+  async login(req, res) {
+    const { email, senha } = req.body;
+
+    try {
+      const usuarioEncontrado = await usuario.findOne({
+        
+        where: { email },
+      });
+
+      if (usuarioEncontrado) {
+        if (bcrypt.compareSync(senha, usuarioEncontrado.senha)) {
+          return res.status(200).json({ message: 'Login bem-sucedido!', usuario: usuarioEncontrado });
+        } else {
+          return res.status(401).json({ error: 'Credenciais inválidas' });
+        }
+      } else {
+        return res.status(404).json({ error: 'Usuário não encontrado' });
+      }
+    } catch (error) {
+      console.error(error);
+      return res.status(500).json({ error: 'Erro interno do servidor' });
+    }
+  },
 };
+
 
 module.exports = UsuarioController;

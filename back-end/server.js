@@ -12,6 +12,8 @@ const porta = 3000
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('./fotos'))
+
 
 // Rotas para ação sustentável
 app.get('/api/acaosustentavel', AcaoSustentavelController.index);
@@ -26,6 +28,7 @@ app.get('/api/usuario/:id', usuarioController.show);
 app.post('/api/usuario', usuarioController.store);
 app.put('/api/usuario/:id', usuarioController.update);
 app.delete('/api/usuario/:id', usuarioController.destroy);
+app.post('/api/login', usuarioController.login);
 
 // Rotas para empresa
 app.get('/api/empresa', EmpresaController.index);
