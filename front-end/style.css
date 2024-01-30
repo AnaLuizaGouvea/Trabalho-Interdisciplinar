@@ -193,9 +193,16 @@ a {
 
 /* Carrossel menu*/
 #carousel-inner-first img {
-    height: 540px;
-    width: 50%;
+    max-width: 44.5em;
+    margin: auto;
+    max-height: 400px;
+    width: auto;
+    height: auto;
 }
+.carousel {
+    position: relative;
+    background-color: var(--verdeClaro);
+  }
 .w-100{
     width: 100%!important;
     height: 1%!important;
@@ -271,6 +278,7 @@ a {
 
     .image-wrapper {
         margin: 0 auto;
+        height: 200px;
     }
 }
 
